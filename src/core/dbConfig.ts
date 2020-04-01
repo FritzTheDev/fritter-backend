@@ -1,5 +1,9 @@
 import { ConnectionOptions } from 'typeorm';
-
+/*
+* bBConfig takes environment variables loaded by DotEnv and plugs them
+* into a config object for createConnection() to use.
+* It also sets the DB type & tells typeorm where to find entities.
+*/
 export const dbConfig: ConnectionOptions = {
   type: 'postgres',
   host: process.env.POSTGRES_HOST,
