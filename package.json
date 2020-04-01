@@ -28,5 +28,16 @@
     "prettier": "^2.0.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,md,json}": [
+      "prettier --write --single-quote",
+      "git add"
+    ]
   }
 }
