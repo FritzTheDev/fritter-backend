@@ -6,7 +6,7 @@ import { App, dbConfig } from "./core";
 
 const main = async () => {
   // if this throws then the app is worthless anyway
-  createConnection(dbConfig);
+  await createConnection(dbConfig);
 
   const app = new App();
   app.listen();
