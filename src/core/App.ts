@@ -9,7 +9,7 @@ export class App {
   app: express.Application;
 
   constructor() {
-    // works off the express default property to keep typescript happy.
+    // uses the express default property to keep typescript happy.
     this.app = express();
 
     // TODO: Explore whether error middleware needs to be separate.
