@@ -1,6 +1,12 @@
 {
   "name": "fritter-server",
   "license": "UNLICENSED",
+  "scripts": {
+    "start:dev": "tsnd ./src/index.ts",
+    "start": "node ./build/index.js",
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts",
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
