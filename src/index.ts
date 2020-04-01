@@ -2,14 +2,11 @@ import "reflect-metadata";
 import "dotenv/config";
 import { createConnection } from "typeorm";
 
-import { App } from "./core";
+import { App, dbConfig } from "./core";
 
 const main = async () => {
-  try {
-    await createConnection(dbConfig);
-  } catch (error) {
-    console.log(`Error Connecting To Database: ${error}`);
-  }
+  // if this throws then the app is worthless anyway
+  createConnection(dbConfig);
 
   const app = new App();
   app.listen();
