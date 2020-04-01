@@ -7,6 +7,13 @@
     "build": "tsc",
     "lint": "eslint --ext .js,.ts"
   },
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24"
+  },
   "devDependencies": {
     "@types/bcrypt": "^3.0.0",
     "@types/dotenv": "^8.2.0",
